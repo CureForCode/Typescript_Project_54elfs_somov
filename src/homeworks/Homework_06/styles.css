@@ -1,0 +1,42 @@
+.homework06_wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  margin: 0 0 16px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.cars_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.car_card {
+  flex: 1 1 220px;
+  box-sizing: border-box;
+  border: 1px solid #e5e5e5;
+  border-radius: 12px;
+  padding: 12px;
+  background: #aa8fd8;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.car_brand {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.car_price,
+.car_fuel,
+.car_note {
+  margin: 4px 0;
+  font-size: 14px;
+}
