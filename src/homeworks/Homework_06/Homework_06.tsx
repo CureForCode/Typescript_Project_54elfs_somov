@@ -1,13 +1,7 @@
 import "./styles.css";
 import { v4 as uuidv4 } from "uuid";
 
-// 1) Интерфейс описывает типы данных объекта.
-interface Car {
-  brand: string;      // string
-  price: number;      // number
-  isDiesel: boolean;  // boolean
-  note?: string;      // optional свойство (просто так для тренировки)
-}
+import { type Car } from "./types";
 
 // 2) Типизированный массив объектов Car[].
 const cars: Car[] = [
