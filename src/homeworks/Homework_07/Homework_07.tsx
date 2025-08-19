@@ -6,7 +6,7 @@ function Homework_07() {
   const [like, setLike] = useState<number>(0);
   const [dislike, setDislike] = useState<number>(0);
 
-  const handleLike = () => setLike((prev) => prev + 3);       // В исходном файле Feedback.jsx из репозитория было три setLike подряд
+  const handleLike = () => setLike((prev) => prev + 1);
   const handleDislike = () => setDislike((prev) => prev + 1);
   const handleReset = () => {
     setLike(0);
@@ -21,7 +21,7 @@ function Homework_07() {
         dislike={dislike}
         onLike={handleLike}
         onDislike={handleDislike}
-        onReset={handleReset}
+        resetResults={handleReset}
       />
     </div>
   );
