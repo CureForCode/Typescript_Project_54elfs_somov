@@ -6,7 +6,7 @@ import Input from "components/Input/Input";
 import { LoginFormContainer, InputsContainer, Title } from "./styles";
 
 function LoginForm() {
-  // Пример работы с контролируемыми элементами на странице
+  /// Пример работы с контролируемыми элементами на странице
   // const [inputValue, setInputValue] = useState<string>("");
 
   // const changeInputValue = (event: ChangeEvent<HTMLInputElement>) => {
