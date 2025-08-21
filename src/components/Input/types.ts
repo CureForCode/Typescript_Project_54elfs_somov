@@ -1,9 +1,13 @@
+import { type ChangeEvent } from "react";
+
 export interface InputProps {
   id: string;
   name: string;
-  label: string;
   type?: string;
-  placeholder?: string;
+  placeholder: string;
+  label: string;
+  error?: string | undefined;
   disabled?: boolean;
-  error?: string;
+  value?: string;
+  onChange?: (event: ChangeEvent<HTMLInputElement>) => void;
 }

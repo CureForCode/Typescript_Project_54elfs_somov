@@ -7,9 +7,10 @@ import GlobalStyles from "styles/GlobalStyles";
 
 // Homeworks
 //import Homework_06 from "homeworks/Homework_06/Homework_06";
-import Homework_08 from "homeworks/Homework_08/Homework_08";
+//import Homework_08 from "homeworks/Homework_08/Homework_08";
 
 import "./App.css";
+import Lesson_09 from "lessons/Lesson_09/Lesson_09";
 
 function App() {
   return (
@@ -18,9 +19,10 @@ function App() {
       {/* Lessons */}
       {/* <Lesson_06 /> */}
       {/* <Lesson_07 /> */}
-      {/*<Lesson_08 />
+      {/*<Lesson_08 /> */}
+      <Lesson_09 />
       {/* Homeworks */}
-      <Homework_08 />
+      {/*<Homework_08 />*/}
     </div>
   );
 }

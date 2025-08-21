@@ -4,11 +4,13 @@ import { InputWrapper, InputLabel, InputComponent, ErrorText } from "./styles";
 function Input({
   id,
   name,
-  label,
   type = "text",
   placeholder,
-  disabled,
-  error,
+  label,
+  disabled = false,
+  error = undefined,
+  value,
+  onChange,
 }: InputProps) {
   return (
     <InputWrapper>
@@ -19,9 +21,11 @@ function Input({
         type={type}
         placeholder={placeholder}
         disabled={disabled}
-        $hasError={error ? true : false}
+        $hasError={!!error}
+        value={value}
+        onChange={onChange}
       />
-      {error && <ErrorText>{error}</ErrorText>}
+      {!!error && <ErrorText>{error}</ErrorText>}
     </InputWrapper>
   );
 }
