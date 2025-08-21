@@ -3,23 +3,21 @@ import styled from "@emotion/styled";
 export const PageWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  flex: 1;
   align-items: center;
   justify-content: center;
   gap: 20px;
   padding: 40px;
 `;
 
-export const Paragraph = styled.p`
-  font-size: 30px;
+export const ElementControl = styled.div`
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+`;
+
+export const Text = styled.p`
+  font-size: 20px;
   font-weight: bold;
-  color: red;
-`;
-
-export const ButtonControl = styled.div`
-  width: 300px;
-`;
-
-export const InputControl = styled.div`
-  width: 300px;
+  margin: 0;
 `;
