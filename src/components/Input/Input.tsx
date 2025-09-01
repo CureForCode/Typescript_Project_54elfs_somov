@@ -11,6 +11,7 @@ function Input({
   error = undefined,
   value,
   onChange,
+  onBlur,
 }: InputProps) {
   return (
     <InputWrapper>
@@ -24,6 +25,7 @@ function Input({
         $hasError={!!error}
         value={value}
         onChange={onChange}
+        onBlur={onBlur}
       />
       {!!error && <ErrorText>{error}</ErrorText>}
     </InputWrapper>
