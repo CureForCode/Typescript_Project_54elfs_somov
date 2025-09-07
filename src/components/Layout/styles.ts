@@ -5,6 +5,7 @@ export const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
+  align-items: center;
 `;
 
 export const Header = styled.header`
@@ -47,6 +48,7 @@ export const Main = styled.main`
   display: flex;
   flex: 1;
   padding: 40px;
+  align-items: center;
 `;
 
 export const Footer = styled.footer`

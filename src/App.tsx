@@ -7,6 +7,12 @@ import ContactUsForm from "pages/EmployeeApp/ContactUs/ContactUs";
 import LogIn from "pages/EmployeeApp/LogIn/LogIn";
 import About from "pages/EmployeeApp/About/About";
 
+//Client  pages
+import Clients from "pages/Clients/Clients";
+import Facebook from "pages/Clients/facebook/Facebook";
+import Google from "pages/Clients/google/Google";
+import Netflix from "pages/Clients/netflix/Netflix";
+
 // Components
 import Layout from "components/Layout/Layout";
 
@@ -34,6 +40,13 @@ function App() {
           <Route path="/contactUs" element={<ContactUsForm />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LogIn />} />
+
+          {/*  Client pages */}
+          <Route path="/clients" element={<Clients />} />
+          <Route path="/clients/facebook" element={<Facebook />} />
+          <Route path="/clients/google" element={<Google />} />
+          <Route path="/clients/netflix" element={<Netflix />} />
+
           <Route path="*" element="Page Not Found" />
         </Routes>
       </Layout>
