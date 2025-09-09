@@ -5,7 +5,6 @@ export const LayoutWrapper = styled.div`
   display: flex;
   flex-direction: column;
   flex: 1;
-  align-items: center;
 `;
 
 export const Header = styled.header`
@@ -48,7 +47,6 @@ export const Main = styled.main`
   display: flex;
   flex: 1;
   padding: 40px;
-  align-items: center;
 `;
 
 export const Footer = styled.footer`
@@ -80,3 +78,8 @@ export const FooterLink = styled(Link)`
   font-size: 14px;
   font-weight: bold;
 `;
+
+export const navlinkProps = (isActive: boolean) => ({
+  fontWeight: isActive ? "bold" : "normal",
+  textDecoration: isActive ? "underline" : "none",
+});
