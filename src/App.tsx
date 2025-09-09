@@ -22,7 +22,7 @@ import Lesson_07 from "lessons/Lesson_07/Lesson_07";
 import Lesson_08 from "lessons/Lesson_08/Lesson_08";
 import Lesson_09 from "lessons/Lesson_09/Lesson_09";
 import Lesson_11 from "lessons/Lesson_11/Lesson_11"; */
-import Lesson_13 from "lessons/Lesson_13/Lesson_13";
+/* import Lesson_13 from "lessons/Lesson_13/Lesson_13"; */
 
 // Homeworks
 /* import Homework_06 from "homeworks/Homework_06/Homework_06";
@@ -30,6 +30,7 @@ import Homework_07 from "homeworks/Homework_07/Homework_07";
 import Homework_08 from "homeworks/Homework_08/Homework_08";
 import Homework_09 from "homeworks/Homework_09/Homework_09";
 import Homework_11 from "homeworks/Homework_11/Homework_11"; */
+import Homework_13 from "homeworks/Homework_13/Homework_13";
 
 function App() {
   return (
@@ -41,6 +42,7 @@ function App() {
           <Route path="/contactUs" element={<ContactUsForm />} />
           <Route path="/about" element={<About />} />
           <Route path="/login" element={<LogIn />} />
+          <Route path="/homework13" element={<Homework_13 />} />
 
           {/*  Client pages */}
           <Route path="/clients" element={<Clients />} />
@@ -57,12 +59,13 @@ function App() {
       {/* <Lesson_08 /> */}
       {/* <Lesson_09 /> */}
       {/* <Lesson_11 /> */}
-      <Lesson_13 />
+      {/* <Lesson_13 /> */}
       {/* Homeworks */}
       {/* <Homework_07 /> */}
       {/* <Homework_08 /> */}
       {/* <Homework_09 /> */}
       {/* <Homework_11 /> */}
+      {/* <Homework_13 /> */}
     </BrowserRouter>
   );
 }
