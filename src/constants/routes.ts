@@ -28,5 +28,6 @@ export enum NAVIGATION_MENU_ROUTES {
   "Contact Us" = "/contactUs",
   About = "/about",
   Login = "/login",
-  Homework13 = "/homework13"
+  Homework13 = "/homework13",
+  Lesson14 = "/lesson14"
 }
